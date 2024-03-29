@@ -6,7 +6,8 @@ BEGIN
 
 RETURN QUERY SELECT
     id,
-    route,
+    path,
+    type,
     function
 FROM
     api_routes;
