@@ -31,7 +31,7 @@ await Promise.all(
           ...req.params,
         });
         const result = await client.query(
-          `SELECT * FROM ${route.function}('${data}')`
+          `SELECT * FROM ${route.function}($1)`, [data]
         );
         res.status(200).send(result);
       } catch (error) {
