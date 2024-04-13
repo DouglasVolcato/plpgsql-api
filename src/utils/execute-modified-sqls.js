@@ -22,7 +22,6 @@ const runSQLFilesWithTransaction = async (client, files) => {
 
     for (const file of files) {
       const filePath = file;
-      console.log(filePath,await fs.access(filePath));
       const sql = await fs.readFile(filePath, "utf-8");
 
       await client.query(sql);
