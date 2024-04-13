@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node src/api/index.js"
+    "start": "node src/api/index.js",
+    "sql": "node src/utils/execute-modified-sqls.js"
   },
   "type": "module",
   "dependencies": {
