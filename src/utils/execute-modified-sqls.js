@@ -18,21 +18,20 @@ const pool = new Pool({
 const runSQLFilesWithTransaction = async (client, files) => {
   try {
     await client.query("BEGIN");
-    console.log("\n***BEGIN***\n");
+    console.log("\n*** BEGIN ***\n");
 
     for (const file of files) {
       const filePath = file;
       const sql = await fs.readFile(filePath, "utf-8");
-
       await client.query(sql);
-      console.log(`Executed ${file}`);
+      console.log(`✓ ${file}`);
     }
 
     await client.query("COMMIT");
-    console.log("\n***COMMIT***\n");
+    console.log("\n*** COMMIT ***\n");
   } catch (error) {
     await client.query("ROLLBACK");
-    console.log("\n***ROLLBACK***\n");
+    console.log("\n*** ROLLBACK ***\n");
     throw error;
   }
 };
@@ -56,7 +55,12 @@ const getModifiedSQLFiles = async () => {
   const client = await pool.connect();
   try {
     const modifiedFiles = await getModifiedSQLFiles();
-    await runSQLFilesWithTransaction(client, modifiedFiles);
+
+    if (modifiedFiles.length === 0) {
+      console.log("*** No changes detected in sql files ***");
+    } else {
+      await runSQLFilesWithTransaction(client, modifiedFiles);
+    }
   } catch (error) {
     console.error("Error:", error.message);
   } finally {
