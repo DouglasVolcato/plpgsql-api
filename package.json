@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "node src/api/index.js",
-    "sql": "node src/utils/execute-modified-sqls.js"
+    "sql": "node src/utils/execute-modified-sqls.js",
+    "docker-build": "docker compose up --build"
   },
   "type": "module",
   "dependencies": {
