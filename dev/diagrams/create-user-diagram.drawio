@@ -37,7 +37,7 @@
                 <mxCell id="23" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="13" target="22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="fc_router" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="13" value="router" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="145.5" y="510" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" value="Main" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
@@ -58,7 +58,7 @@
                 <mxCell id="46" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;fontSize=14;" parent="1" source="21" target="42" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="fc_create_user_controller" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="21" value="create_user_controller" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="130.5" y="807" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="controller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
@@ -114,19 +114,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="29" value="fc_create_user_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="29" value="create_user_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="410" y="640" width="177" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="fc_required_fieldValidator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="30" value="required_fieldValidator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="410" y="510" width="157" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="fc_field_type_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="31" value="field_type_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="663" y="497" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="fc_min_length_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="32" value="min_length_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="665" y="577" width="153" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="fc_email_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="33" value="email_validator" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="668" y="661" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;" parent="1" source="5" target="13" edge="1">
@@ -162,7 +162,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" value="fc_create_user_usecase" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="42" value="create_user_usecase" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="125" y="960" width="161" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="password_hasher" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
@@ -189,7 +189,7 @@
                 <mxCell id="78" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;fontSize=12;" parent="1" source="65" target="76" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="65" value="fc_pgcrypto_hasher_adapter" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="65" value="pgcrypto_hasher_adapter" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="592" y="960" width="188" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="73" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;dashed=1;" parent="1" source="66" target="44" edge="1">
@@ -198,7 +198,7 @@
                 <mxCell id="79" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;fontSize=12;" parent="1" source="66" target="75" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="66" value="fc_uuid_generator_adapter" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="66" value="uuid_generator_adapter" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="593" y="1189" width="181" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="71" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;dashed=1;" parent="1" source="67" target="47" edge="1">
@@ -212,7 +212,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="67" value="fc_create_user_repository" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="67" value="create_user_repository" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="592" y="1035" width="187" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="72" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;dashed=1;" parent="1" source="68" target="48" edge="1">
@@ -226,7 +226,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="68" value="fc_get_user_by_email_repository" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="68" value="get_user_by_email_repository" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="592" y="1112" width="184" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="75" value="UuidOssp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">

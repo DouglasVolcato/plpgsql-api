@@ -19,7 +19,7 @@ const pool = new Pool({
 });
 
 const client = await pool.connect();
-const result = await client.query("SELECT * FROM fc_router()");
+const result = await client.query("SELECT * FROM router()");
 
 await Promise.all(
   result.rows.map(async (route) => {

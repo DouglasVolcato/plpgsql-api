@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION fc_router() 
+CREATE OR REPLACE FUNCTION router() 
 RETURNS SETOF api_routes 
 AS $$ 
 
