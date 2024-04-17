@@ -42,9 +42,9 @@ const getModifiedSQLFiles = async () => {
       if (err) {
         reject(err);
       } else {
-        const modifiedFiles = stdout
-          .split("\n")
-          .filter((file) => file.endsWith(".sql"));
+        const modifiedFiles = stdout.split("\n").filter((file) => {
+          return file.endsWith(".sql") && !file.includes(".spec.sql");
+        });
         resolve(modifiedFiles);
       }
     });
