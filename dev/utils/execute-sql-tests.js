@@ -38,7 +38,7 @@ const runSQLFilesWithTransaction = async (client, files) => {
 
 const getModifiedSQLFiles = async () => {
   return new Promise((resolve, reject) => {
-    exec("git diff --name-only origin/main", (err, stdout) => {
+    exec("find dev/tests -type f", (err, stdout) => {
       if (err) {
         reject(err);
       } else {
